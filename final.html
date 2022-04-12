@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galactic Express Adventures</title>
+    <script defer src="./js/validation.js"></script>
+    <stlye>
+        
+        <link rel="stylesheet" href="demo.css">
+    </stlye>
+</head>
+
+<header>
+    <div class="title">
+        <img src="./images/SatryriconLogoH.png">
+       
+    </div>
+</header>
+
+<body>
+    <div id="container">
+        <div class="intro">
+
+            <div>
+                <h1>
+                                   Are you ready to have the adventure of your life? </h1>
+            </div>
+
+            <div>
+                <p> Break out of the ordinary and join us for a life changing adventure. Galactic Express is the
+                    galaxies most trusted
+                    providers of luxury space travel. Book your adventure today.
+                    <br>
+                   Our guest say that traveling with Galactic Express is the moment life truely begins for them. You will see sights in this vast galaxy beyond your imagination. 
+                   <br>
+                   We are glad you are here. 
+                </p>
+            </div>
+        </div>
+
+
+        <!----- where does this go???? Can it live outside of wrapper
+        <div id="error"></div>
+        <form id="form" action="/thankupage.html" method="GET">
+        ------->
+
+        <section="ticketInfo">
+            <div class="ticket">
+
+                <div>
+                    <input type="radio" id="oneway" name="trip" value="oneway" checked onclick="disableRoundtrip()">
+                    <label for="oneway">One Way</label>
+                </div>
+                <div>
+                    <input type="radio" id="roundtrip" name="trip" value="roundtrip" onclick="enableRoundtrip()">
+                    <label for="roundtrip">Round Trip</label>
+                </div>
+                
+              
+                <!-----
+    </section>
+    <section class="city">
+                      ---->
+                <div>
+                    <label for="from">Departure:</label>
+               
+                    <input type="text" id="from" name="departureCity" list="departureCitylist" required>
+                    <datalist id="departureCitylist">
+                        <option value="Delhi, India">
+                        <option value="London, England">
+                        <option value="New York, United States">
+                        <option value="Sydney, Australia">
+                        <option value="Tokyo, Japan">
+                        <option value="McMurdo Station, Antarctica">
+                    </datalist>
+                </div>
+
+                <div><label for="to">Destination:</label>
+                
+                    <input type="text" id="destinationCity" name="destinationCity" list="destinationCitylist" disabled
+                        required>
+                    <datalist id="destinationCitylist">
+                        <option value="Hot Springs, Mercury">
+                        <option value="Belle Isle de Amour,Venus">
+                        <option value="Red Creek Manor, Mars">
+                        <option value="Juniper Falls, Jupiter">
+                        <option value="Satyricon Metro Hub, Saturn">
+                        <option value="Armstrong Ski Resort, Moon">
+                    </datalist>
+                </div>
+
+
+                <div>
+                    <label for="departDate">Departure Date:</label>
+                
+                    <input type="Date" id="departDate: " name="departDate" value="new Date()" min="new Date()"
+                        max="2022-12-31">
+                </div>
+                <div>
+                    <label for="returnDate">Return Date:    </label>
+                
+                    <input type="date" id="returnDate" name="returnDate" value="new Date()" min="new Date()"
+                        max="2022-12-31" disabled>
+                </div>
+
+
+
+                <div> <label for="ticket"></label>
+               
+                    <input type="radio" id="cryogenic" name="ticket" value="cryogenic" checked>
+                    <label for="cryogenic">Cryogenic Suite</label>
+                </div>
+                <div>
+                    <input type="radio" id="cabin" name="ticket" value="cabin">
+                    <label for="cabin">Suborbital Cabin</label>
+                </div>
+                <div>
+                    <input type="radio" id="bay" name="ticket" value="bay">
+                    <label for="bay">Free-Float Bay</label>
+                </div>
+                </section>
+            </div>
+            <div>
+
+                <label for="headcount">Number of Passengers</label>
+                <select id="headcount" name="headcount">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div><br>
+
+            <!----------new class passenger------------------>
+            <section="passenger info">
+                <div class="passenger">
+
+                    <div>
+                        <label for="firstname">First name:</label>
+                   
+                        <input type="text" id="firstname" name="firstname" placeholder="Given name">
+                    </div>
+                    <div> <label for="lastname">Last name:</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Surname">
+                    </div>
+
+
+                    <div>
+                        <label for="email">Email: </label>
+                    
+                        <input type="text" id="email" name="email" placeholder="Email">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone: </label>
+                   
+                        <input type="text" id="phone" name="phone" placeholder="10-digit phone">
+                    </div>
+
+                    <div>
+                        <label for="meals">Dietary Request: </label>
+                  
+                        <select id="meals" name="meals">
+                            <option value="Gluten Free">Gluten Free</option>
+                            <option value="Vegan">Vegan</option>
+                            <option value="Halal">Halal</option>
+                            <option value="Raw Meat">Raw Meat</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="organ">Are you an organ donor?</label>
+                     <select id="organ" name="organ">
+
+
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="maybe">No, but interested</option>
+                        </select>
+                    </div>
+
+                    <!-----removing extra option
+        <div>
+            <label for="blood">Blood Type</label>
+        </div>
+        <div>
+            <select id="blood" name="blood">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="AB">AB</option>
+                <option value="O">O</option>
+            </select>
+        </div>
+        ----->
+            </section>
+    </div>
+
+    <!-------------------new div payment--------------->
+    <section="paymentInfo" <div class="payment">
+
+        <div>
+            <label for="card">Credit Card:</label> <input type="text" id="card" name="card" placeholder="Card number">
+        </div>
+
+        <div>
+            <label for="expire">Expire date:</label>
+
+            <input type="text" id="expire" name="expire" placeholder="dd mm yyyy">
+        </div>
+        <div> <label for="csc">CSC:</label>
+            <input type="text" id="code" name="code" placeholder="3 digit security code">
+        </div>
+        </div>
+
+    </section>
+
+    <!-------------- new div checkout------------->
+    <section="checkout" <div>
+        <div class="checkOut">
+
+<div>
+
+            <input type="checkbox" id="subscription" name="subscription" value="yes">
+            <label for="subscription">I want more specials and promotions. Sign me up so I can continue my
+                adventuring.</p>
+        </div>
+        <div>
+            <input type="checkbox" id="legal" name="legal" value="yes">
+            </label>
+            <label for="legal">I release Galactic Express, Thisco Chepat Corps, and their intergalictic allies.
+                </p> </label>
+
+        </div>
+        <div>   </div>
+    </section>
+            <br>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+        </div>
+     
+    </form>
+    </main>
+    <div id="footer">
+        <footer>
+            <p>Copyright ©2022 Thisco Chepat Corp, Galactic Express Booking.com™. All rights reserved.</p>
+        </footer>
+    </div>
+    </div>
+</body>
+
+</html>
