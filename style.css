@@ -136,9 +136,20 @@ background: rgb(186, 18, 99);
     background-image: linear-gradient(to bottom, #2bada2, #3498db);
     text-decoration: none;
   }
-
-
-
+  #error{
+    color:red
+  }
+  #thankmessage{
+    font-size: 30px;
+    text-align: center;
+  }
+  input[type=button] {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 230px;
+    font-size: 20px;
+  }
 
 
 

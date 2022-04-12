@@ -10,7 +10,7 @@
     <script defer src="./js/validation.js"></script>
     <stlye>
         
-        <link rel="stylesheet" href="demo.css">
+        <link rel="stylesheet" href="style.css">
     </stlye>
 </head>
 
@@ -43,12 +43,9 @@
         </div>
 
 
-        <!----- where does this go???? Can it live outside of wrapper
         <div id="error"></div>
         <form id="form" action="/thankupage.html" method="GET">
-        ------->
-
-        <section="ticketInfo">
+            <section="ticketInfo">
             <div class="ticket">
 
                 <div>
@@ -68,7 +65,7 @@
                 <div>
                     <label for="from">Departure:</label>
                
-                    <input type="text" id="from" name="departureCity" list="departureCitylist" required>
+                    <input type="text" id="departureCity" name="departureCity" list="departureCitylist" >
                     <datalist id="departureCitylist">
                         <option value="Delhi, India">
                         <option value="London, England">
@@ -82,7 +79,7 @@
                 <div><label for="to">Destination:</label>
                 
                     <input type="text" id="destinationCity" name="destinationCity" list="destinationCitylist" disabled
-                        required>
+                        >
                     <datalist id="destinationCitylist">
                         <option value="Hot Springs, Mercury">
                         <option value="Belle Isle de Amour,Venus">
@@ -97,7 +94,7 @@
                 <div>
                     <label for="departDate">Departure Date:</label>
                 
-                    <input type="Date" id="departDate: " name="departDate" value="new Date()" min="new Date()"
+                    <input type="Date" id="departDate" name="departDate" value="new Date()" min="new Date()"
                         max="2022-12-31">
                 </div>
                 <div>
